@@ -1,0 +1,58 @@
+.colla {
+   padding-top: 150px;
+   padding-bottom: 150px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 8px;
+   @media (max-width: 900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  &__left {
+    h3 {
+      padding-top: 50px;
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    h2 {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding-top: 8px;
+      padding-bottom: 23px;
+    }
+    p {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      padding-bottom: 25px;
+      width: 80%;
+    }
+    h4 {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      padding-bottom: 12px;
+    }
+  }
+  &__right{
+   img{
+      width: 100%;
+   }
+  }
+}
+@media (max-width:900px){
+
+}

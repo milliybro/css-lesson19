@@ -1,0 +1,117 @@
+.client {
+  text-align: center;
+  padding-bottom: 150px;
+  h1 {
+    color: #22343d;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  > p {
+    color: #22343d;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 8px;
+    padding-bottom: 50px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 64px;
+    padding-bottom: 157px;
+    @media (max-width:850px){
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+    &__card {
+      padding: 28px;
+      text-align: left;
+      border-radius: 5px;
+      border: 1px solid #dedede;
+      background: var(--light-background, #fff);
+      p {
+        color: #737373;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        padding-bottom: 16px;
+      }
+      &__table {
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+        //   img{
+        //     margin-top: -50px;
+        //   }
+        .person {
+          h4 {
+            color: #02897a;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 15px;
+          }
+          p {
+            margin-top: -5px;
+            color: #252b42;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  &__card {
+    border-radius: 32px;
+    background: #02897a;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:800px){
+      flex-direction: column;
+    }
+    &__left {
+      padding: 50px 30px 50px 50px;
+      h2 {
+        text-align: left;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 151.4%;
+      }
+      button {
+        color: #02897a;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 14px 34px;
+        border-radius: 8px;
+        background: #fff;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 50px;
+      }
+    }
+    &__right{
+      img{
+         @media (max-width:500px){
+            width: 50%;
+         }
+      }
+    }
+  }
+}

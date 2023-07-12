@@ -1,0 +1,119 @@
+.price {
+  padding-bottom: 150px;
+  text-align: center;
+  h1 {
+    color: #22343d;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: #22343d;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 8px;
+    padding-bottom: 50px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+    @media (max-width:900px){
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+    &__card {
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+
+      h3 {
+        padding-top: 24px;
+        color: #22343d;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+      }
+      p {
+        color: #22343d;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      button {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 8px;
+        background: #02897a;
+        padding: 14px 24px;
+        margin-bottom: 38px;
+      }
+      &__table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        h2 {
+          color: #02897a;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 76px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100px;
+          letter-spacing: 0.2px;
+        }
+        .dolar {
+          h4 {
+            padding-top: 15px;
+            text-align: left;
+            color: #02897a;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.1px;
+          }
+          p {
+            color: var(--second-text, #afafaf);
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.1px;
+          }
+        }
+      }
+    }
+  }
+}
+.price__item__card:hover{
+   background-color: #02897a;
+   h2,
+   h3,
+   h4,
+   p{
+      color: #fff;
+   }
+   button{
+      background-color: #fff;
+      color: #02897a;
+   }
+}

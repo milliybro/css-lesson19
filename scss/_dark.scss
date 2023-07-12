@@ -1,0 +1,65 @@
+.dark {
+  #management,
+  #support,
+  #product,
+  #colla,
+  #process,
+  #content,
+  #client,
+  #price,
+  #navbar,
+  footer {
+   background-color: black;
+  }
+  .navbar{
+   a,p{
+      color: #fff;
+   }
+  }
+  svg{
+   display: none;
+  }
+  .product,
+  .management,
+  .support,
+  .colla,
+  .process,
+  .content,
+  .price,
+  .client,
+  footer{
+   h2,h1,h3,p,a,h4,li{
+      color: #fff;
+   }
+  }
+  .process{
+   padding-top: 250px;
+   h1,p{
+      color: rgb(127, 122, 122) !important;
+   }
+   .comment-1{
+      background-color: black;
+   }
+  }
+  .content{
+   .item{
+      background-color: black;
+   }
+  }
+  .price{
+   &__item__card{
+      background-color: black;
+      border: 1px solid #fff;
+   }
+  }
+  .client{
+   &__item__card{
+      background-color: black;
+   }
+  }
+  .footer{
+   a{
+      color: #fff;
+   }
+  }
+}

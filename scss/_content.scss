@@ -1,0 +1,77 @@
+.content {
+   padding-bottom: 150px;
+  h1 {
+    color: #22343d;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: #22343d;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    padding-top: 8px;
+    padding-bottom: 33px;
+  }
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  width: 30px;
+  transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+  width: 50px;
+  background: #02897A;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #02897A;
+}
+
+
+
+.item {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #22343d;
+  
+  }
+  .item-img {
+    img {
+      border-radius: 8px 8px 0px 0px;
+    }
+  }
+  .item-text {
+   padding: 24px;
+    h4 {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      padding-top: 24px;
+      padding-bottom: 12px;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      
+    }
+  }
+.item:hover p{
+   color: #02897A;
+}

@@ -1,0 +1,87 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+*,
+*::after,
+*::before{
+   box-sizing: border-box;
+}
+html{
+   scroll-behavior: smooth;
+}
+// variables
+$white-bg-color: #fff;
+$primary-color: #02897a;
+$secondary-color: #173a56;
+
+.container{
+   max-width: calc(1400px - 292px - 40px);
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.container__lg{
+   max-width: 1540px;
+   margin: 0 auto;
+}
+#management,
+#support,
+#product,
+#colla,
+#process,
+#content,
+#client,
+#price{
+   padding-top: 80px;
+}
+
+
+
+#backtop {
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 50%;
+   bottom: -100px;
+   right: 25px;
+   width: 50px;
+   height: 50px;
+   z-index: -1;
+   background-color: #FFA63A;
+   animation: bgcolor infinite 1.2s;
+   transition: 0.5s;
+}
+@keyframes bgcolor{
+   0%
+   {
+      background: #e74c3c;
+   }
+   20%
+   {
+      background: #2980b9;
+   }
+   40%
+   {
+      background: #f1c40f;
+   }
+   60%
+   {
+      background: #8e44ad;
+   }
+   80%
+   {
+      background: #34495e;
+   }
+   100%
+   {
+      background: #e74c3c;
+   }
+}
+
+#backtop.backtop-show {
+   bottom: 25px;
+   z-index: 10;
+}
+
